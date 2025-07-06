@@ -3,4 +3,4 @@ I'm creating my own CTF challenges! I'll publish them on my website as soon as t
 
 ### Table of contents
 
-- [Security By Obscurity 1](https://github.com/maxnordstrom/ctf_maxnordstrom/tree/main/security_by_obscurity_1)
+- [Security By Obscurity 1](./security_by_obscurity_1/)

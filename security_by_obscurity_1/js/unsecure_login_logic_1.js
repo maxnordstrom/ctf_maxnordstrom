@@ -22,15 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //return success or error messages
     if (username && password) {
-      console.log("You have successfully logged in!");
-      getTheFlag();
+      document.getElementById("loginMessage").innerHTML = "You have successfully logged in! Here's your flag: <strong>" + getTheFlag(); "</strong>"
     } else if (!username && password) {
-      console.log("Error! Invalid username.")
+      document.getElementById("loginMessage").innerHTML = "Error! Invalid username."
     } else if (username && !password) {
-      console.log("Error! Invalid password.")
+      document.getElementById("loginMessage").innerHTML = "Error! Invalid password."
     } else {
-      console.log("Error! Invalid username and password.")
+      document.getElementById("loginMessage").innerHTML = "Error! Invalid username and password."
     };
-
   });
 });

@@ -18,5 +18,6 @@ function getTheFlag() {
 
   let theFinalFlag = theFlag.slice(0, 3) + "{" + theFlag.slice(3) + "}";
 
-  console.log(theFinalFlag);
+  return(theFinalFlag);
+  //console.log(theFinalFlag);
 };

@@ -9,8 +9,22 @@
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <div class="login-card">
+    <h1>Security by Obscurity 1</h1>
+    <h3>Simple (?) Login Form</h3>
+
+    <p>Welcome! After successfully entering the credentials you will be provided a flag. Are you the authorized user, or can you find a way to break the form?</p>
+
+    <form id="loginForm">
+      <label for="username">Username</label>
+      <input type="text" id="username" autocomplete="off" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" autocomplete="off" required>
+
+      <button type="submit">Log In</button>
+    </form>
+  </div>
 
   <script src="js/unsecure_login_logic_1.js"></script>
   <script src="js/caesar_cipher.js"></script>

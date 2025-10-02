@@ -17,4 +17,4 @@ for (let i = 0; i < notTheFlag.length; i++) {
 
 let theFinalFlag = theFlag.slice(0, 3) + "{" + theFlag.slice(3) + "}";
 
-console.log(theFinalFlag);
+// console.log(theFinalFlag);

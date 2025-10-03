@@ -1,7 +1,7 @@
 function getTheFlag() {
 
   let alphabet = "abcdefghijklmnopqrstuvwxyz";
-  let notTheFlag = "pdaiodj";
+  let notTheFlag = "pdabrx3wrwdoob3jrw3lw";
   let theFlag ="";
 
   for (let i = 0; i < notTheFlag.length; i++) {
@@ -11,13 +11,16 @@ function getTheFlag() {
     if (x <= 2) { //om index är 0, 1 eller 2 adderas 26 för att komma till slutet av alfabetet
       x = x + 26;
     };
-    
-    x = x-3; //subtraherar 3 för att backa tillbaka i alfabetet
-    theFlag += alphabet.charAt(x);
-  };
 
-  let theFinalFlag = theFlag.slice(0, 3) + "{" + theFlag.slice(3) + "}";
+    if (y == "3") {
+      theFlag += "_";
+    } else {
+      x = x-3; //subtraherar 3 för att backa tillbaka i alfabetet
+      theFlag += alphabet.charAt(x);
+    };
+  };
+  
+  let theFinalFlag = theFlag.slice(0, 3) + "{" + theFlag.slice(3).toUpperCase() + "}";
 
   return(theFinalFlag);
-  //console.log(theFinalFlag);
 };

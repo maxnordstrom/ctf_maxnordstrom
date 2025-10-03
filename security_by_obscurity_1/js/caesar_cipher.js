@@ -5,17 +5,17 @@ function getTheFlag() {
   let theFlag ="";
 
   for (let i = 0; i < notTheFlag.length; i++) {
-    let y = notTheFlag.charAt(i); //här har vi den krypterade bokstaven
-    let x = alphabet.indexOf(y); //här hittar vi positionen av den krypterade bokstaven
+    let y = notTheFlag.charAt(i);
+    let x = alphabet.indexOf(y);
     
-    if (x <= 2) { //om index är 0, 1 eller 2 adderas 26 för att komma till slutet av alfabetet
+    if (x <= 2) {
       x = x + 26;
     };
 
     if (y == "3") {
       theFlag += "_";
     } else {
-      x = x-3; //subtraherar 3 för att backa tillbaka i alfabetet
+      x = x-3;
       theFlag += alphabet.charAt(x);
     };
   };

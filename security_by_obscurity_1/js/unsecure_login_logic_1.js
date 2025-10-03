@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
       password = true;
     };
 
-    //return success or error messages
     if (username && password) {
       document.getElementById("loginMessage").innerHTML = "You have successfully logged in! Here's your flag: <strong>" + getTheFlag(); "</strong>"
     } else if (!username && password) {
@@ -29,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById("loginMessage").innerHTML = "Error! Invalid username and password."
     };
     
-    //toggling classes to show alert
     if (username && password) {
         $('#loginMessage').removeClass().addClass("alert alert-success shadow-sm");
       } else {

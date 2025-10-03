@@ -2,7 +2,7 @@
 
 ![screenshot](img/screenshot.jpg)
 
-I've made a really insecure login form, glad you found it!
+I've made a really insecure login form, glad you found it! It's hosted at [https://ctf.maxnordstrom.se/securityByObscurity1](https://ctf.maxnordstrom.se/securityByObscurity1)
 
 Two questions for you:
 

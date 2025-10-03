@@ -14,27 +14,27 @@
 <body>
 
   <div class="login-card container">
-    <h1>Security by Obscurity 1</h1>
-    <h3>Simple Login Form</h3>
-
-    <div class="welcome-card">
+    <div class="col-7">
+      <h1>Security by Obscurity 1</h1>
+      <h3>Simple Login Form</h3>
+    
       <p>Hi! Log in to get your well deserved flag. If you remember your credentials that is... Are you sure you are the authorized user, or can you find a way to break the form?</p>
+    
+      <form id="loginForm">
+        <div class="form-row align-items-center">
+          <div class="col-auto">
+            <label for="username">Username</label>
+            <input type="text" id="inputUsername" class="form-control" autocomplete="off" required>
+          </div>
+          <div class="col-auto">
+            <label for="password">Password</label>
+            <input type="password" id="inputPassword" class="form-control" autocomplete="off" required>
+          </div>
+        </div>
+        <div id="loginMessage" class="" role="alert"></div>
+        <button type="submit" class="btn btn-primary mb-2">Log In</button>
+      </form>
     </div>
-
-    <form id="loginForm">
-      <div class="form-row align-items-center">
-        <div class="col-auto">
-          <label for="username">Username</label>
-          <input type="text" id="inputUsername" class="form-control" autocomplete="off" required>
-        </div>
-        <div class="col-auto">
-          <label for="password">Password</label>
-          <input type="password" id="inputPassword" class="form-control" autocomplete="off" required>
-        </div>
-      </div>
-      <div id="loginMessage"></div>
-      <button type="submit" class="btn btn-primary mb-2">Log In</button>
-    </form>
   </div>
 
   <!-- Vm10a2IyTkhUalZSYmtKcVRXcFNkVnBGVGtOTlIwWklWbGRrWVdKWWFHOVhibXhDVG10MFVsQlVNRDA9 -->

@@ -10,12 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputUsername = document.getElementById('inputUsername').value.trim();
     const inputPassword = document.getElementById('inputPassword').value;
 
-    //check username criteria
     if (inputUsername.length == 5 && inputUsername.charAt(3) == "y") {
       username = true;
     };
 
-    //check password criteria
     if (inputPassword.slice(-3) == "123") {
       password = true;
     };
@@ -30,5 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       document.getElementById("loginMessage").innerHTML = "Error! Invalid username and password."
     };
+    
+    //toggling classes to show alert
+    if (username && password) {
+        $('#loginMessage').removeClass().addClass("alert alert-success");
+      } else {
+        $('#loginMessage').removeClass().addClass("alert alert-danger");
+      };
   });
 });

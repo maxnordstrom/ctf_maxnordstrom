@@ -14,26 +14,28 @@
 <body>
 
   <div class="container d-flex align-items-center justify-content-center">
-    <div class="card col-7 mt-5 py-2 bg-light shadow">
-      <h1>Security by Obscurity 1</h1>
-      <h3>Simple Login Form</h3>
-    
-      <p>Hi! Log in to get your well deserved flag. If you remember your credentials that is... Are you sure you are the authorized user, or can you find a way to break the form?</p>
-    
-      <form id="loginForm">
-        <div class="form-row align-items-center mb-3">
-          <div class="col-auto">
-            <label for="username">Username</label>
-            <input type="text" id="inputUsername" class="form-control" autocomplete="off" required>
+    <div class="card col-lg-7 col-sm-12 mt-5 px-0 bg-light shadow">
+      <div class="card-header">
+        <h1>Security by Obscurity 1</h1>
+        <h4>Simple Login Form</h4>
+      </div>
+      <div class="card-body">
+        <p>Hi! Log in to get your well deserved flag. If you remember your credentials... Are you sure you're authorized? Or can there be a way to break the form?</p>
+        <form id="loginForm">
+          <div class="form-row align-items-center mb-3">
+            <div class="col-auto">
+              <label for="username">Username</label>
+              <input type="text" id="inputUsername" class="form-control" autocomplete="off" required>
+            </div>
+            <div class="col-auto">
+              <label for="password">Password</label>
+              <input type="password" id="inputPassword" class="form-control" autocomplete="off" required>
+            </div>
           </div>
-          <div class="col-auto">
-            <label for="password">Password</label>
-            <input type="password" id="inputPassword" class="form-control" autocomplete="off" required>
-          </div>
-        </div>
-        <div id="loginMessage" class="" role="alert"></div>
-        <button type="submit" class="btn btn-primary mb-2">Log In</button>
-      </form>
+          <div id="loginMessage" class="" role="alert"></div>
+          <button type="submit" class="btn btn-primary mb-2">Log In</button>
+        </form>
+      </div>
     </div>
   </div>
 

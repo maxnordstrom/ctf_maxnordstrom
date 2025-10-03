@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     //toggling classes to show alert
     if (username && password) {
-        $('#loginMessage').removeClass().addClass("alert alert-success");
+        $('#loginMessage').removeClass().addClass("alert alert-success shadow-sm");
       } else {
-        $('#loginMessage').removeClass().addClass("alert alert-danger");
+        $('#loginMessage').removeClass().addClass("alert alert-danger shadow-sm");
       };
   });
 });

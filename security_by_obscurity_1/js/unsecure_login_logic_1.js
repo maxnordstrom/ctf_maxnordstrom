@@ -1,11 +1,11 @@
-let username = false;
-let password = false;
-
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('loginForm');
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
+
+    let username = false;
+    let password = false;
     
     const inputUsername = document.getElementById('inputUsername').value.trim();
     const inputPassword = document.getElementById('inputPassword').value;

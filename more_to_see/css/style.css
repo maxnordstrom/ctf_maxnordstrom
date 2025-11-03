@@ -1,7 +1,16 @@
 html, body {
   height: 100%;
+  background-color: #ffe4c42b;
 }
 
 h2 {
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
+}
+
+h5 {
+  transition: color 0.8s ease, color 0.8s ease;
+}
+
+.text-bg-dark {
+  background-color: #343a40 !important;
 }

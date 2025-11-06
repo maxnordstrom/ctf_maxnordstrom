@@ -9,4 +9,18 @@ h2 {
 
 .card {
   border: none;
+  position: relative;
+}
+
+.just-a-div {
+  display: contents;
+}
+
+.carrot {
+  z-index: 2;
+}
+
+.potatoe {
+  z-index: 1;
+  position: absolute;
 }

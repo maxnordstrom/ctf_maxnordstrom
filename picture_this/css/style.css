@@ -1,0 +1,12 @@
+html, body {
+  height: 100%;
+  background-color: #a6a6a64f;
+}
+
+h2 {
+  margin-bottom: 0px !important;
+}
+
+.card {
+  border: none;
+}

@@ -24,3 +24,20 @@ h2 {
   z-index: 1;
   position: absolute;
 }
+
+.mobile-tooltip {
+  position: absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  max-width: 90vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

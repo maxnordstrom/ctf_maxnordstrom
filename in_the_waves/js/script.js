@@ -1,6 +1,6 @@
 function revealMessage() {
     
-    const blob = "XQQ4RWshRzA6bn1TVSd8NkIiZRBAO3IwYG9OEFY6ZDBvOjxASCFmfnthSx9jMSowOyh5Hlw/eyV0NjNeZT08NlUqKENNJnE2ViFcXTB8fTcyK0ofUnJLb01uOmtKP1cgVntJQ2knPClVbj5fOzQmZD08I1FCNmEtSSFpEHshVi1vKS9eSzN0KG4T";
+    const blob = "XQQ4RWshRzA6bn1TVSd8NkIiZRBAO3IwYG9OEFY6ZDBvOjxASCFmfnthSx9jMSowOyh5Hlw/eyV0NjNeZT08NlUqKENNJnE2ViFcXTB8fTcyK0ofUjtLKk1jOkRKOlchVmNJR2kzPDJVKz5DO30mZD1lIxBCCWEpSSppBXshVjFvIy8QSz10Im5uPkI/M1wgTycyXzpyUDdgJ21XcTwzJUIiUm0=";
 
     const raw = atob(blob);
     const bytes = Uint8Array.from(raw, c => c.charCodeAt(0));

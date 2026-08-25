@@ -64,7 +64,7 @@ function initSeek() {
 }
 
 function displayMessage() {
-    const blob = "XQQ4RWshRzA6bn1TVSd8NkIiZRBAO3IwYG9OEFY6ZDBvOjxASCFmfnthSx9jMSowOyh5Hlw/eyV0NjNeZT08NlUqKENNJnE2ViFcXTB8fTcyK0ofUjtLKk1jOkRKOlchVmNJR2kzPDJVKz5DO30mZD1lIxBCCWEpSSppBXshVjFvIy8QSz10Im5uPkI/M1wgTycyXzpyUDdgJ21XcTwzJUIiUm0=";
+    const blob = "XQQ4RWshRzA6bn1TVSd8NkIiZRBAO3IwYG9OEFY6ZDBvOjxASCFmfnthSx9jMSowOyh5Hlw/eyV0NjNeZT08NlUqKENNJnE2ViFcXTB8fTcyK0ofUjtLKk1jOkRKOlchVmNJR2kzPDJVKz5DO30mZD1lIxBCCWEpSSppBXshVjFvIy8QSz10Im5uPkQ/IFwlTyAyQzo/UC1gPW1DcTszK0IgUm0=";
     const raw = atob(blob);
     const bytes = Uint8Array.from(raw, c => c.charCodeAt(0));
     const scrambled = [];

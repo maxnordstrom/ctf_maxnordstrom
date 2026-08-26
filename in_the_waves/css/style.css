@@ -1,6 +1,6 @@
 html, body {
   height: 100%;
-  background-color: #a6a6a64f;
+  background-color: #d8d8d8;
 }
 h2 {
   margin-bottom: 0px !important;
@@ -83,4 +83,13 @@ h2 {
 }
 .volume-slider {
   max-width: 160px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  background-color: #212529;
+}
+
+.volume-slider::-moz-range-thumb {
+  background-color: #212529;
+  border: none;
 }

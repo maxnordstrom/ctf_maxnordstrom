@@ -101,9 +101,15 @@ function initTimeDisplay() {
     const durationEl = document.querySelector('.time-duration');
     if (!audio || !currentEl || !durationEl) return;
 
-    audio.addEventListener('loadedmetadata', () => {
-        durationEl.textContent = formatTime(audio.duration);
-    });
+    const updateDuration = () => {
+        if (isFinite(audio.duration) && audio.duration > 0) {
+            durationEl.textContent = formatTime(audio.duration);
+        }
+    };
+
+    audio.addEventListener('loadedmetadata', updateDuration);
+    audio.addEventListener('durationchange', updateDuration);
+    updateDuration();
 
     audio.addEventListener('timeupdate', () => {
         currentEl.textContent = formatTime(audio.currentTime);

@@ -115,28 +115,6 @@ function initTimeDisplay() {
     });
 }
 
-function initMobileTooltips() {
-    const tooltip = document.querySelector('.mobile-tooltip');
-    if (!tooltip) return;
-
-    document.querySelectorAll('[title]').forEach(el => {
-        const text = el.getAttribute('title');
-        if (!text) return;
-
-        el.addEventListener('touchstart', () => {
-            tooltip.textContent = text;
-            const rect = el.getBoundingClientRect();
-            tooltip.style.left = `${rect.left + rect.width / 2}px`;
-            tooltip.style.top = `${rect.top - 30}px`;
-            tooltip.style.display = 'block';
-        });
-
-        el.addEventListener('touchend', () => {
-            tooltip.style.display = 'none';
-        });
-    });
-}
-
 document.addEventListener('DOMContentLoaded', () => {
     initPlayPause();
     initProgressBar();
